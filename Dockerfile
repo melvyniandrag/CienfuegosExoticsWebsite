@@ -12,11 +12,13 @@ COPY cienfuegosexotics /var/www/cienfuegosexotics
 
 WORKDIR /var/www/cienfuegosexotics
 
-RUN python3 manage.py collectstatic
+RUN python3 manage.py collectstatic --noinput
 
 RUN a2enmod wsgi
 
 RUN a2dissite 000-default.conf
+
+RUN a2ensite cienfuegosexotics
 
 EXPOSE 80
 

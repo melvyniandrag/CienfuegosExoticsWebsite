@@ -12,14 +12,21 @@ docker build -t cienfuegos_exotics -f Dockerfile .
 ```
 
 To run the container
+```
+docker run -d \
+    -e DJANGO_SECRET_KEY=aogolijkhgokljhalkjhjglkgjhglkj \
+    -e DEBUG_MODE=false \
+    -p 9000:80 \
+    --name cienfuegos_exotics_website
+    cienfuegos_exotics
+```
+
+
+To attach to the container for maintenance
 
 ```
-docker run \
-    -e DJANGO_SECRET_KEY=somesupersecretstringhexadecimalalphanumericwhatever \
-    -e DEBUG_MODE=false \
-    -it
-    -p 9000:80
-    cienfuegos_exotics
+docker exec -ti cienfuegos_exotics_website bash
+
 ```
 
 # Development instructions
