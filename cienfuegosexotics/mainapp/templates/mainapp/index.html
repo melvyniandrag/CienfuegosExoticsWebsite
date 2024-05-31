@@ -1,0 +1,27 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<section id="header" class="my-5">
+  <div class="primary-overlay text-white">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-6 text-center h-100">
+          <h1 class="display-1 mt-5 pt-5">J. Cienfuegos & Sons Exotic Species</h1>
+          <p class="display-4">Fast. Free. Fancy.</p>
+          <a href="#" class="btn btn-outline-secondary btn-lg text-white"> <i class="fas fa-arrow-right"></i>Read More</a>
+        </div>
+        <div class="col-lg-6 text-center h-100 mt-5">
+          <img src="{% static 'mainapp/img/exam.png' %}" alt="image" class="h-75 img-fluid d-none d-lg-inline-block showcaseForeground">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
+
+
