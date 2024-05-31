@@ -17,7 +17,7 @@ docker run -d \
     -e DJANGO_SECRET_KEY=aogolijkhgokljhalkjhjglkgjhglkj \
     -e DEBUG_MODE=false \
     -p 9000:80 \
-    --name cienfuegos_exotics_website
+    --name cienfuegos_exotics_website \
     cienfuegos_exotics
 ```
 
