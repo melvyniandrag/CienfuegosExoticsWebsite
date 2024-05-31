@@ -1,0 +1,6 @@
+#Django files
+static
+media
+*.log
+*.pyc
+__pycache__
