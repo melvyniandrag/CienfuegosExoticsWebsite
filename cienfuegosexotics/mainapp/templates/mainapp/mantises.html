@@ -1,0 +1,70 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+<section id="header" class="mx-4">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1> Mantises </h1>
+            <p> One of nature's most amazing creatures. This is a bug with a personality. </p>
+            <p> This creature will change your perception of insects. They love to be held and will gladly walk in your hands and on your head. They turn their heads to look at you and follow you with their gaze. </p>
+            <p> It's absolutely terrifying to watch them snatch flies out of the air and devour them whole. It's like watching an African Lions eat a buffallo on National Geographic. These bugs are peaceful with humans but merciless when it comes to other bugs. </p>
+            <p> A fantastic and interesting pet. They live through the summer and pass away in the fall. Stunningly beautiful, interesting, short-lived creatures. </p>
+        </div>
+    </div>
+
+
+      <div class="row">
+             <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Carolina Mantis
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Native to the East Coast of the USA!</h5>
+                    <p class="card-text">A cute mantis, about 4 inches long when fully grown. Native to the east coast of the USA</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Chinese Mantis
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Cool Bug</h5>
+                    <p class="card-text">The Chinese mantis is similar in appearance to the Carolina Mantis, but it is a bit larger. Easy to handle. Voracious predator.</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    European Mantis
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">A Beauty</h5>
+                    <p class="card-text">Similar in size, appearance and temperament to the Chinese Mantis. A wonderful bug.</p>
+              </div>
+            </div>
+        </div>
+   </div>
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block updateActive %}
+   <script>
+    $(document).ready(function() {
+            var currentPage= $( "#peppers_page_nav_item" );    
+            .addClass( "active" );
+        });
+    </script>
+{% endblock %}

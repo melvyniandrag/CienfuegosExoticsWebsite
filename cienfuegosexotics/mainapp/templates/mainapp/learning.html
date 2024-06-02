@@ -1,0 +1,29 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+<section id="header" class="mx-4">
+    <div class="container h-100">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-center text-wrap">Learn From Us!</h1>
+          <p>We've been raising tomatoes, peppers and mantises for years now. Come visit this page often to learn about our latest educational activities for you and your kids.</p>
+          <p> We can teach you about how to raise mantises, and show you all kinds of cool and scary specimens! </p>
+            <p> We can also teach you and your kids about grafting tomatoes to potatoes and to other tomatoes as well as other techniques to grow amazing, healthy plants.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block updateActive %}
+   <script>
+    $(document).ready(function() {
+            var currentPage= $( "#about_page_nav_item" );    
+            .addClass( "active" );
+        });
+    </script>
+{% endblock %}
