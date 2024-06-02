@@ -1,7 +1,6 @@
 #Django files
 /static
 
-
 media
 *.log
 *.pyc

@@ -1,0 +1,105 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+<section id="header" class="mx-4">
+    <div class="container">
+      <div class="row">
+             <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Habanada
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">It's Not Spicy!</h5>
+                    <p class="card-text">A very hard to find pepper plant. Looks like a habanero pepper, you'll probably be scared to bite into one of these. But it's actually very sweet! A very interesting plant and wonderful conversation piece for your back yard.</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Sweet Carolina Bell
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Delicious!</h5>
+                    <p class="card-text">A delicious bell pepper. Large, sweet, firm peppers. Typically cost about $2 per pound at the grocery store, but you'll have unlimited peppers right there in your yard or on your fire escape! </p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Dragon Cayenne
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">This one's no joke!</h5>
+                    <p class="card-text">A properly spicy pepper. Long thin finger peppers, perfect for your favorite recipes or sauces.</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Carolina Reaper
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">The Big Dog!</h5>
+                    <p class="card-text">This is the hottest pepper in the world. One pepper will be enough to last you all winter. Really a dangerous plant, don't keep this around children or pets. Proceed with caution and have fun.</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Hot Cherry
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">An Italian Treat</h5>
+                    <p class="card-text">You've probably seen this pepper stuffed with Prosciutto on the deli counter. Delicious, crisp peppers with just the right amound of heat. Good for cooking, sauces, pickling, or whatever you can imagine.</p>
+              </div>
+            </div>
+        </div>
+<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">
+                    Rainbow Firecracker Chili
+                </div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Don't be fooled</h5>
+                    <p class="card-text">This is a beautiful plant with green/purple leaves and absolutely packed with tiny little mouth burning peppers. The plant is truly beautiful as it has the multicolor leaves and peppers that will be green, yellow, red, purple and orange. A beauty and very spicy</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="card-img-top">
+                <div class="card-header">Hot Yellow Peppers</div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Cool Color, Serious Heat</h5>
+                    <p class="card-text">Pretty long yellow peppers. Properly spicy and pretty to look at.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block updateActive %}
+   <script>
+    $(document).ready(function() {
+            var currentPage= $( "#peppers_page_nav_item" );    
+            .addClass( "active" );
+        });
+    </script>
+{% endblock %}

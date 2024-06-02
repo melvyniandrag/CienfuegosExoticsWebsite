@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="97.502754mm"
+   height="16.84235mm"
+   viewBox="0 0 97.502754 16.84235"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/home/melvyn/Desktop/CienfuegosExoticsWebsite/cienfuegosexotics/mainapp/static/mainapp/img/url_logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="url_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.24539"
+     inkscape:cx="256.51771"
+     inkscape:cy="160.07321"
+     inkscape:window-width="3840"
+     inkscape:window-height="2028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient106610">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop106606" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop106608" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient106610"
+       id="linearGradient106612"
+       x1="34.005648"
+       y1="86.747975"
+       x2="131.5084"
+       y2="86.747975"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.005648,-78.3268)">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:16.9333px;line-height:1.25;font-family:'The Soul Of Vodka';-inkscape-font-specification:'The Soul Of Vodka Bold';fill:url(#linearGradient106612);fill-opacity:1;stroke-width:0.01;stroke:#ffffff;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="33.910419"
+       y="91.440186"
+       id="text5006"><tspan
+         sodipodi:role="line"
+         id="tspan5004"
+         style="font-size:16.9333px;fill:#ffff00;fill-opacity:1;stroke:#ffffff;stroke-width:0.01;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="33.910419"
+         y="91.440186">cienfuegosexotics.com</tspan></text>
+  </g>
+</svg>

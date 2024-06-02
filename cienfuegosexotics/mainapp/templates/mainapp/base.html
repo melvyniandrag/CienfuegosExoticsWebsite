@@ -21,7 +21,7 @@
 
         <style>
                 body{
-                        margin-top: 105px;
+                        margin-top: 120px;
                 }
         </style>
 </head>
@@ -32,26 +32,26 @@
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-4" id="main-nav">
       <div class="container">
         <a href="{% url 'mainapp:index' %}" class="navbar-brand">
-          <img src="{% static 'mainapp/img/logo.jpg' %}" height="50" alt="logo">
+          <img src="{% static 'mainapp/img/url_logo.png' %}" height="50" alt="logo">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="mr-auto nav-item" id="about_page_nav_item">
               <a href="#" class="nav-link">About</a>
             </li>
-            <li class="nav-item">
-              <a href="{% url 'mainapp:index' %}" class="nav-link">Peppers</a>
+            <li class="mr-auto nav-item" id="peppers_page_nav_item">
+              <a href="{% url 'mainapp:peppers' %}" class="nav-link">Peppers</a>
             </li>
-            <li class="nav-item">
+            <li class="mr-auto nav-item">
               <a href="{% url 'mainapp:index' %}" class="nav-link">Tomatoes</a>
             </li>
-            <li class="nav-item">
+            <li class="mr-auto nav-item">
               <a href="{% url 'mainapp:index' %}" class="nav-link">Mantises</a>
             </li>
-            <li class="nav-item">
+            <li class="mr-auto nav-item">
               <a href="#" class="nav-link">Learning</a>
             </li>
           </ul>
@@ -80,6 +80,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T
         " crossorigin="anonymous "></script>
 
+
+    <!-- Update the copyright date -->
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
@@ -105,5 +107,7 @@
     
     </script>
 
+    {% block updateActive %}
+    {% endblock %}
 
 </body>

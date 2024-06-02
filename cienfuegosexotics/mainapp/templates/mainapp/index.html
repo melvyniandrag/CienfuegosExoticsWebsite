@@ -19,3 +19,12 @@
 
 {% endblock %}
 
+
+{% block updateActive %}
+   <script>
+    $(document).ready(function() {
+            var currentPage= $( "#about_page_nav_item" );    
+            .addClass( "active" );
+        });
+    </script>
+{% endblock %}
