@@ -3,31 +3,69 @@
 {% load static %}
 
 {% block body %}
+
 <section id="header" class="mx-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="text-center text-wrap">J. Cienfuegos & Sons Exotic Species</h1>
-          <p> Call or text to talk about our exotic species for sale! </p>
-          <h2>603-724-1451</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-center text-wrap">J. Cienfuegos & Sons Exotic Species</h1>
+        <p> Call or text to talk about our exotic species for sale! </p>
+        <h2>603-724-1451</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 offset-md-3">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000" data-pause="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" style="width:100%" class="img-responsive">
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/garden02.png' %}" style="height:100%" class="img-responsive">
+
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/garden.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/corn.jpg' %}" class="img-responsive">
+              
+            </div>
+
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/mantis/mantis.png' %}" class="img-responsive">
+              
+            </div>
+
+
+          </div>   
         </div>
       </div>
-      <div class="row">
-          <div class="col-12 text-center">
-            <img src="{% static 'mainapp/img/mantis/mantis.png' %}" alt="image" class="img-fluid">
-          </div>
-      </div>
-  </div>
+    </div>
+  </div> 
 </section>
 
 {% endblock %}
 
 
 {% block updateActive %}
-   <script>
-    $(document).ready(function() {
-            var currentPage= $( "#about_page_nav_item" );    
-            .addClass( "active" );
-        });
-    </script>
+<script>
+  $(document).ready(function() {
+    var currentPage= $( "#about_page_nav_item" )  
+    .addClass( "active" );
+  });
+</script>
+
 {% endblock %}
