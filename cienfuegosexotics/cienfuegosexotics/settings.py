@@ -27,6 +27,8 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', "veryinsecurekey!")
 DEBUG = os.getenv("DEBUG_MODE", 'True').lower() in ('true', '1', 't')
 
 ALLOWED_HOSTS = [
+    "001T480",
+    "001t480",
     "192.168.1.165",
     "localhost",
     "cienfuegosexotics.com",

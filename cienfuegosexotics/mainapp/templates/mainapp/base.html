@@ -27,24 +27,12 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'mainapp/favicon/favicon.ico' %}"/>
 
     <title>Cienfuegos Exotics</title>
-
-
-        <style>
-                body{
-                        margin-top: 120px;
-                }
-        </style>
-
-        <script>
-
-        </script>
-
 </head>
 
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-4" id="main-nav">
+  <nav class="navbar navbar-expand-md custom-navbar" id="main-nav">
       <div class="container">
         <a href="{% url 'mainapp:index' %}" class="navbar-brand">
           <img src="{% static 'mainapp/img/url_logo.png' %}" height="38" alt="logo">
@@ -53,25 +41,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">     
+            <li class="mr-auto nav-item" id="contact_page_nav_item">
+              <a href="{% url 'mainapp:contact' %}" class="nav-link">Contact</a>
+            </li>
             <li class="mr-auto nav-item" id="about_page_nav_item">
               <a href="{% url 'mainapp:index' %}" class="nav-link">About</a>
             </li>
-             <li class="mr-auto nav-item" id="contact_page_nav_item">
-              <a href="{% url 'mainapp:contact' %}" class="nav-link">Contact</a>
+            <li class="mr-auto nav-item" id="about_page_nav_item">
+          <a href="https://www.youtube.com/@cienfuegosexotics" class="nav-link" target="_blank">
+            <i class="fab fa-youtube fa-1x"></i>
+          </a>
             </li>
-            <li class="mr-auto nav-item" id="peppers_page_nav_item">
-              <a href="{% url 'mainapp:peppers' %}" class="nav-link">Peppers</a>
-            </li>
-            <li class="mr-auto nav-item">
-              <a href="{% url 'mainapp:tomatoes' %}" class="nav-link">Tomatoes</a>
-            </li>
-            <li class="mr-auto nav-item">
-              <a href="{% url 'mainapp:mantises' %}" class="nav-link">Mantises</a>
-            </li>
-            <li class="mr-auto nav-item">
-              <a href="{% url 'mainapp:learning' %}" class="nav-link">Learning</a>
-            </li>
+   
+            </a>    
           </ul>
         </div>
       </div>

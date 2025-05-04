@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'h1font';
+    src: url('../fonts/Yellowtail-Regular.ttf') format('truetype');
+    font-weight: 100 900;  /* full variable weight range */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'h2font';
+    src: url('../fonts/Newsreader-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;  /* full variable weight range */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'h3font';
+    src: url('../fonts/ViaodaLibre-Regular.ttf') format('truetype');
+    font-weight: 100 900;  /* full variable weight range */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Example usage */
+h1 {
+    font-family: 'h1font', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'h2font', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'h3font', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'h3font', sans-serif;
+    font-weight: 300;
+}
+
+.front-page-list-item{
+	font-size: 2rem;
+	font-family: 'h3font', sans-serif;
+}
+#header {
+  position: relative;
+  background: url("../img/websiteheaderbg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#exoticspeciesheadertext{
+	color: yellow;
+}
+
+#forsaleyoungplant{
+	background-color: #ffffff;
+}
+
+#forsalematureplant{
+	background-color: #edf4ee;
+}
+
+.custom-navbar {
+  background-color: #446517; /* Custom indigo color */
+}
+.custom-navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size:2rem;
+  font-family: 'h3font', sans-serif;
+    
+}
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: darkred;
+}

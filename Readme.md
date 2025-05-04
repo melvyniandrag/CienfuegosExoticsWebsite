@@ -18,6 +18,7 @@ docker run -d \
     -e DEBUG_MODE=false \
     -p 9000:80 \
     --name cienfuegos_exotics_website \
+    --rm \
     cienfuegos_exotics
 ```
 

@@ -1,71 +1,177 @@
 {% extends 'mainapp/base.html' %}
-
 {% load static %}
 
 {% block body %}
+<body>
 
-<section id="header" class="mx-4">
+<!-- Header Section -->
+<section id="header">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="text-center text-wrap">J. Cienfuegos & Sons Exotic Species</h1>
-        <p> Call or text to talk about our exotic species for sale! </p>
-        <h2>603-724-1451</h2>
+        <h1 class="display-1 pt-5 text-white">J. Cienfuegos & Sons</h1>
+        <h2 id="exoticspeciesheadertext" class="display-3 mt-3 mb-1">Exotic Species</h2>
+        <h3 class="display-4 my-1 text-white">est. 2021 &#8226; Union City, NJ</h3>
+        <h3 class="display-4 my-3 pb-3 text-white">551-300-9323</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- $10 Tier Section -->
+<section id="forsaleyoungplant" class="py-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="display-3">$10 Tier</h2>
+        <h3 class="display-4">Grown from seed in our nursery.</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Carousels -->
+      <div class="col-12 col-md-6">
+
+        <!-- Portrait Carousel (small screens) -->
+        <div id="portraitCarousel10" class="carousel slide d-md-none m-5" data-ride="carousel" data-interval="4000" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#portraitCarousel10" data-slide-to="0" class="active"></li>
+            <li data-target="#portraitCarousel10" data-slide-to="1"></li>
+            <li data-target="#portraitCarousel10" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+        <!-- Landscape Carousel (md and up) -->
+        <div id="landscapeCarousel10" class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="4000" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#landscapeCarousel10" data-slide-to="0" class="active"></li>
+            <li data-target="#landscapeCarousel10" data-slide-to="1"></li>
+            <li data-target="#landscapeCarousel10" data-slide-to="2"></li>
+            <li data-target="#landscapeCarousel10" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'mainapp/img/garden02.png' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/garden.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/corn.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/mantis/mantis.png' %}" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Varieties List -->
+      <div class="col-12 col-md-6">
+        <h3 class="display-4">Available varieties.</h3>
+        <h4 class="display-5">You won't find these at Home Depot!</h4>
+        <ul>
+          <li class="front-page-list-item">Chinese 5 Color</li>
+          <li class="front-page-list-item">Buena Mulatta</li>
+          <li class="front-page-list-item">Habanero</li>
+          <li class="front-page-list-item">Real Deal Hybrid</li>
+          <li class="front-page-list-item">Chocolate Jalape&#241;o</li>
+          <li class="front-page-list-item">Aji Charapita</li>
+          <li class="front-page-list-item">Aleppo</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- $40 Tier Section -->
+<section id="forsalematureplant" class="py-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="display-3">$40 Tier</h2>
+        <h3 class="display-5">
+          Plant sold in 10-20 gallon planter with high quality soil.
+          These plants are strong and healthy, guaranteed to start setting fruit soon.
+        </h3>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 col-md-6 offset-md-3">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000" data-pause="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
 
+        <!-- Portrait Carousel (small screens) -->
+        <div id="portraitCarousel40" class="carousel slide d-md-none" data-ride="carousel" data-interval="4000" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#portraitCarousel40" data-slide-to="0" class="active"></li>
+            <li data-target="#portraitCarousel40" data-slide-to="1"></li>
+            <li data-target="#portraitCarousel40" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" style="width:100%" class="img-responsive">
-            </div>
-
-            <div class="carousel-item">
-              <img src="{% static 'mainapp/img/garden02.png' %}" style="height:100%" class="img-responsive">
-
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
             </div>
             <div class="carousel-item">
-              <img src="{% static 'mainapp/img/garden.jpg' %}" class="img-responsive">
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
             </div>
-
             <div class="carousel-item">
-              <img src="{% static 'mainapp/img/corn.jpg' %}" class="img-responsive">
-              
+              <img src="{% static 'mainapp/img/tomato/nate_and_tomato.jpg' %}" class="d-block w-100">
             </div>
-
-            <div class="carousel-item">
-              <img src="{% static 'mainapp/img/mantis/mantis.png' %}" class="img-responsive">
-              
-            </div>
-
-
-          </div>   
+          </div>
         </div>
+
+        <!-- Landscape Carousel (md and up) -->
+        <div id="landscapeCarousel40" class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="4000" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#landscapeCarousel40" data-slide-to="0" class="active"></li>
+            <li data-target="#landscapeCarousel40" data-slide-to="1"></li>
+            <li data-target="#landscapeCarousel40" data-slide-to="2"></li>
+            <li data-target="#landscapeCarousel40" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'mainapp/img/garden02.png' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/garden.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/corn.jpg' %}" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'mainapp/img/mantis/mantis.png' %}" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div> 
+
+  </div>
 </section>
 
+</body>
 {% endblock %}
-
 
 {% block updateActive %}
 <script>
   $(document).ready(function() {
-    var currentPage= $( "#about_page_nav_item" )  
-    .addClass( "active" );
+    $("#about_page_nav_item").addClass("active");
   });
 </script>
-
 {% endblock %}
