@@ -1,0 +1,42 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<section id="header" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-white">
+        <h1 class="text-center text-wrap display-1">About Us</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2">
+        <h2 class="display-3 text-center">And Now For Something Completely Different...</h2>
+        <p>We have a small garden that we use to grow exotic plants. We always have an excess of GREAT PLANTS, so we've set up this website so we can share them with you. </p>
+        <p>We always grow exciting vegetables such as tiny tomatoes, ultra hot peppers, purple potatoes, and weird cucumbers. Have a look though the website, and be sure to check out our youtube channel so you can see what we're talking about.</p>
+        <p>Our plants are started from seed indoors in the middle of winter so they're big and healthy when spring finally rolls around. If you're thinking about starting a garden - and you want an interesting plant that you won't find in any other store - give us a call!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock %}
+
+
+{% block updateActive %}
+   <script>
+    $(document).ready(function() {
+            var currentPage= $( "#about_page_nav_item" );    
+            .addClass( "active" );
+        });
+    </script>
+{% endblock %}
